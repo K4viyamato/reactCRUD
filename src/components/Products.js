@@ -56,7 +56,7 @@ const Product = ({product, getProducts}) => {
                 <div className='text-sm'> Quantity : {product.quantity}</div>
                 <div className='text-sm'> price : $ {product.price}</div>
 
-                <div className='mt-2 flex gap-4'>
+                <div className='mt-2 flex space-x-4'>
                     <Link to={`/edit/${product._id}`} className='inline-block w-full  text-center shadow-md text-sm bg-gray-700 text-white rounded px-4 py-1 font-bold hover:bg-gray-600 hover:cursor-pointer'>Edit</Link>
                     <button onClick={() => deleteProduct(product._id)} className='inline-block w-full  text-center shadow-md text-sm bg-red-600 text-white rounded px-4 py-1 font-bold hover:bg-red-500 hover:cursor-pointer'>Delete</button>
 
