@@ -12,7 +12,7 @@ const HomePage = () => {
   const getProducts = async () => {
     try { 
       setIsLoading(true);
-      const response = await axios.get(`${BACK_END}/api/products/`);
+      const response = await axios.get(`https://react-crud-xi-teal.vercel.app/api/products/`);
       setProducts(response.data);
       setIsLoading(false);
 
